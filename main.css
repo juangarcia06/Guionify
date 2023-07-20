@@ -1,0 +1,220 @@
+@font-face {font-family:"Raleway Heavy";src:url("./fonts/Raleway-Heavy.eot?") format("eot"),url("./fonts/Raleway-Heavy.woff") format("woff"),url("./fonts/Raleway-Heavy.ttf") format("truetype"),url("./fonts/Raleway-Heavy.svg#Raleway-Heavy") format("svg");font-weight:normal;font-style:normal;}
+
+@font-face {
+    font-family: 'Assistant-Bold';
+      src:  url('./fonts/Assistant-Bold.ttf.woff') format('woff'),
+      url('./fonts/Assistant-Bold.ttf.svg#Assistant-Bold') format('svg'),
+      url('./fonts/Assistant-Bold.ttf.eot'),
+      url('./fonts/Assistant-Bold.eot?#iefix') format('embedded-opentype'); 
+      font-weight: normal;
+      font-style: normal;
+}
+
+@import url('https://fonts.cdnfonts.com/css/kollektif');
+
+body {
+    margin: 0px;
+    font-family: "Assistant-Bold";
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);;
+}
+
+footer h2 {
+    font-family: "Assistant-Bold";
+    color: white;
+    font-size: 20px;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.navmenu {
+    transition: all 0.5s;
+    opacity: 0;
+  }
+
+.menuitem {
+    font-family: "Assistant-Bold";
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 24px;
+}
+
+.smalllogo {
+    font-family: "Raleway Heavy";
+    font-size: 32px;
+    color: #1db78c;
+    margin: 16px;
+}
+
+.leftmenu {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightmenu {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainsite h1 {
+ font-family: "Raleway Heavy";
+ font-size: 96px;
+ color: #1db78c;
+ margin-top: 0px;
+ max-width: 90%;
+}
+
+
+h2 {
+    font-family: "Assistant-Bold";
+    color: #24225c;
+    font-size: 48px;
+}
+
+h3 {
+    font-family: "Assistant-Bold";
+    color: #24225c;
+    font-size: 36px;
+}
+.mainsite p {
+    font-family: "Kollektif", sans-serif;
+    color: #1db78c;
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainsite {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.mainleft {
+    width: 43%;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.mainright {
+    width: 43%;
+    margin-left: 2%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainright img {
+    width: 500px;
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.waves {
+    margin-bottom: -8px;
+    width: 100%;
+}
+
+.belowwaves {
+    background-color: #1db78c;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.information {
+    background-color: #1db78c;
+}
+
+.giy {
+    background: rgb(232,232,232);
+}
+
+.comenzar {
+    display: flex;
+    align-items: center;
+    font-family: "Assistant-Bold";
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #292769, #1d2896);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+.comenzar svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.comenzar span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.comenzar:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+.comenzar:hover span {
+    transform: translateX(7px);
+  }
+
+@media screen and (max-width: 1000px) {
+    .mainsite h1 {
+        font-size: 75px;
+    }
+    .mainleft h2 {
+        font-size: 30px;
+    }
+    .mainleft p {
+        font-size: 22px;
+    }
+    .mainsite {
+        flex-flow: column wrap;
+    }
+    .mainright img {
+        width: 80%;
+    }
+    .mainleft {
+        width: 100%;
+    }
+    .mainright {
+        width: 100%;
+    }
+
+
+    .mainleft {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mainright {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+  }
